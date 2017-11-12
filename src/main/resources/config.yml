@@ -1,0 +1,79 @@
+CHESTS:
+  # Are we allowed to generate new chests on the configured area?
+  CHESTS_CAN_BE_GENERATED: true
+  # When generating a new chest, can we generate double chests?
+  CHESTS_CAN_BE_DOUBLE: false
+  FLOATING:
+    # Chests can be generated without a block bellow it?
+    CHESTS_CAN_BE_FLOATING: true
+    # How many empty/air blocks can be bellow a chest, if there is more then that, the chest won't be generated there
+    # -1 is equals infinite, no limit
+    CHEST_FLOATING_MAX_HEIGHT: 6
+    # Other chests, already generated can count as a valid ground/block? If not, it will be counted a as an air/empty block
+    OTHER_CHESTS_COUNT_AS_VALID_GROUND: false
+  # How many times can we try to find a chest or a suitable place to generate a new chest
+  CHESTS_MAX_FIND_ATTEMPTS: 25
+  ITEMS:
+    # When a chest is completely full, it can count as valid chest? If yes, some items that is already inside that chest WILL be deleted
+    COMPLETELY_FULL_CHESTS_CAN_FOUND: false
+    # When filling a chest, slots already occupied, with item in, can be used to put a new item in there? If yes, the item already there WILL be deleted
+    NEW_ITEMS_CAN_BE_PLACED_ON_OCCUPIED_SLOTS: false
+    # When filling a chest, slots are can be selected randomly? If not, the slots will be found from the first to the last, (top-left to bottom-right)
+    PLACE_NEW_ITEMS_ON_RANDOM_SLOT: true
+    # If a suitable place is not found, should the item be deleted? If not, the item will be saved and in the next dumping,
+    # if successful all the items not dumped will be dumped together, IF there's enough room for all the items, and again
+    # all the items not dumped will be saved to next dumping and so on
+    DELETE_UNDUMPED_ITEMS: false
+
+CLEANING:
+  # Should cleaning be enabled?
+  ENABLED: true
+  # How often the cleaning task should be executed?
+  # Delay is in ticks, 20 ticks : 1 second
+  RUN_DELAY: 12000
+  # Should the cleaning be executed on server startup?
+  RUN_ON_STARTUP: true
+  # Work in progress, it may not work as expected
+  RUN_ON_SPECIFIC_TIME:
+    # Cleaning tasks should be executed in specific time?
+    ENABLED: false
+    # When the task should be executed?
+    # Time is given by HOUR:MINUTE
+    # If you have an hour or minute that is less than 10, you MUST place a 0 just before. EG: 5 AM would be 05:00, not 5:00
+    TIME_LIST:
+      - '00:00'
+      - '06:00'
+      - '12:00'
+      - '18:00'
+  RUN_EVERY_X_TIME:
+    # Should the cleaning task be executed every X ticks?
+    ENABLED: true
+    # Delay is in ticks
+    # 1 Second is more or less 20 ticks
+    # 1 Minute: 1200 ticks
+    # 1 Hour: 72000 ticks
+    # 6 Hours: 432000 ticks
+    # 12 Hours: 864000 ticks
+    # 1 Day: 1728000 ticks
+    DELAY: 432000
+  # Should the chest be deleted? If not, only the items inside will be removed
+  # If you set CHESTS.CHESTS_CAN_BE_GENERATED to true, is a good idea to set it true as well
+  DELETE_CHESTS: false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

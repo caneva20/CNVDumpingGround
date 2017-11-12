@@ -1,0 +1,8 @@
+YOU_HAVENT_SELECTED_AN_AREA: 'You haven''t selected an area'
+DUMPING_GROUND_AREA_SUCCESSFULLY_SAVED: 'Dumping ground area successfully saved!'
+DUMPING_GROUND_AREA_SUCCESSFULLY_CLEANED: 'Dumping ground area successfully cleaned based on main configuration'
+DUMPING_GROUND_AREA_SUCCESSFULLY_CLEANED_AND_CHESTS_REMOVED: 'Dumping ground area successfully cleaned and all chests were removed'
+DUMPING_GROUND_AREA_SUCCESSFULLY_CLEANED_AND_CHESTS_KEPT: 'Dumping ground area successfully cleaned and all chests were kept'
+ITEM_IN_HAND_SUCCESSFULLY_DUMPED: 'Item in hand successfully dumped'
+ITEMS_IN_INVENTORY_SUCCESSFULLY_DUMPED: 'All items on your inventory were dumped successfully'
+ALL_CONFIG_FILES_WERE_RELOADED: 'All config files were reloaded'

@@ -1,0 +1,15 @@
+name: CNVDumpingGround
+version: 1.0-RC
+description: Makes all itens that are removed from the world to be sent to a dumping ground
+author: caneva20
+authors: [Game_Crytus]
+depend: [Vault, CNVCore]
+
+main: me.caneva20.CNVDumpingGround.CNVDumpingGround
+
+commands:
+  dumpingground:
+    description: 'Plugin main command'
+    aliases: [dg, cnvdg]
+  cnvdumpingground:
+    description: 'Shows the plugin info'

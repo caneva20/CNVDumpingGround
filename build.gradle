@@ -1,0 +1,23 @@
+group 'me.caneva20.CNVDumpingGround'
+version '1.0-RC'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile files("libs/CNVCore-1.0.jar")
+    compile files("libs/spigot-1.5.2.jar")
+    compile files("libs/vault-1.2.16.jar")
+    compile files("libs/WorldEdit-5.5.6.jar")
+}
